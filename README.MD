@@ -25,15 +25,15 @@ Is pretty straight forward, if you are doing it for your existing OS, `go build`
 ### Build for MacOS
 
 ```bash
-CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -tags mac -o build/jittermouse_arm64 main.go
-CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -tags mac -o build/jittermouse_amd64 main.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -tags "mac purego" -o build/jittermouse_macos_arm64 main.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -tags "mac purego" -o build/jittermouse_macos_amd64 main.go
 ```
 
 ### Build for Windows
 
 ```bash
-CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -tags win -o build/jittermouse_x64.exe main.go
-CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -tags win -o build/jittermouse_x86.exe main.go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -tags "win purego" -o build/jittermouse_win_x64.exe main.go
+CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -tags "win purego" -o build/jittermouse_win_x86.exe main.go
 ```
 
 ### Build for Linux
@@ -41,15 +41,15 @@ CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -tags win -o build/jittermouse_x8
 #### For X11
 
 ```bash
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -tags x11 -o build/jittermouse_x11_x64 main.go
-CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -tags x11 -o build/jittermouse_x11_x86 main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -tags "x11 purego" -o build/jittermouse_x11_x64 main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -tags "x11 purego" -o build/jittermouse_x11_x86 main.go
 ```
 
 #### For Wayland
 
 ```bash
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -tags wayland -o build/jittermouse_wayland_x64 main.go
-CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -tags wayland -o build/jittermouse_wayland_x86 main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -tags "wayland purego" -o build/jittermouse_wayland_x64 main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -tags "wayland purego" -o build/jittermouse_wayland_x86 main.go
 ```
 
 ## Special thanks
