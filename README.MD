@@ -5,7 +5,7 @@ Tired of:
 - having to build cumbersome mechanisms in order to keep your PC as if it was busy?
 - needing to purchase an external device?
 
-Well, me too, so was I and decided to build this.
+Well, so do I, so I decided to build this.
 
 A simple program that all it does is move your mouse in place a single pixel every ±60 seconds
 
