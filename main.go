@@ -33,6 +33,8 @@ func start() {
 	defer ticker.Stop()
 
 	for range ticker.C {
+		robotgo.KeyTap("scrolllock") // Non-intrusive workaround for windows
+		robotgo.KeyTap("scrolllock")
 		robotgo.MoveSmoothRelative(1, 1)
 		robotgo.MoveSmoothRelative(-1, -1)
 	}
